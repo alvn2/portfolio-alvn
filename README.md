@@ -81,7 +81,7 @@ The portfolio is designed to be formal and elegant with a subtle programmer aest
 - **End Date**: April 4th, 2025, 8:00 AM EAT
 - **Award Ceremony**: April 11th, 2025, 6:30 PM EAT
 - **GitHub Repository**: [Link to your GitHub repo]
-- **Hosted URL**: [Link to GitHub Pages/Netlify]
+- **Hosted URL**: [[Link to vercel](https://alvinemugo-nu.vercel.app/)]
 
 ## 📁 How to Run
 1. Clone the repository: `git clone [your-repo-link]`
