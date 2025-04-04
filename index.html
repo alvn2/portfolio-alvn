@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvine Mugo | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Fira Code Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Alvine Mugo</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#collaboration">Collaboration</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#messages">Messages</a></li>
+    </ul>
+    <div class="hamburger">☰</div>
+    <button class="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Home Section (Hero) -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Hi, I'm Alvine Mugo</h1>
+      <p class="tagline"><span class="typing"></span></p>
+      <div class="code-snippet">
+        <pre><code>const coder = {
+  name: "Alvine Mugo",
+  role: "Web Developer",
+  skills: ["HTML", "CSS", "JavaScript"],
+  sayHello: () => console.log("Code is my language!");
+};
+coder.sayHello();</code></pre>
+      </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="cta-btn">View Projects</a>
+        <a href="#contact" class="cta-btn secondary">Let's Talk</a>
+        <a href="./ALVINE MUGO MUNGAI.pdf" download class="cta-btn secondary">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>Hi! I’m Alvine Mugo, a passionate web developer with a love for creating functional and beautiful web experiences.</p>
+      <p>I thrive on turning ideas into code, fueled by coffee and driven by curiosity.</p>
+      <p>My journey in tech is all about solving problems and building solutions that make a difference.</p>
+      <p>When I’m not coding, you’ll find me exploring tech trends or diving into a good book.</p>
+    </div>
+  </section>
+
+  <!-- Educational Background Section -->
+  <section id="education" class="section">
+    <h2>Educational Background</h2>
+    <div class="education-content">
+      <p>I hold a Certificate in Software Engineering from Moringa school, where I graduated in 2024.</p>
+      <p>During my studies, I focused on web development, algorithms, and software engineering principles.</p>
+      <p><a href="./ALVINE MUGO MUNGAI.pdf" download class="cta-btn secondary">Download My CV</a></p>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests" class="section">
+    <h2>Interests</h2>
+    <div class="interests-content">
+      <p><strong>Web Development:</strong> Exploring modern frameworks and best practices to build seamless user experiences.</p>
+      <p><strong>Tech Innovations:</strong> Keeping up with emerging trends like AI, Web3, and cloud computing.</p>
+      <p><strong>Open Source:</strong> Contributing to open-source projects and collaborating with the global dev community.</p>
+      <p><strong>Gaming:</strong> Enjoying the intersection of technology and creativity through game development.</p>
+      <p><strong>Photography:</strong> Capturing moments and expressing creativity through the lens.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Building responsive and scalable websites using modern technologies.</p>
+      </div>
+      <div class="service-card">
+        <h3>UI/UX Design</h3>
+        <p>Creating intuitive and visually appealing user interfaces.</p>
+      </div>
+      <div class="service-card">
+        <h3>API Integration</h3>
+        <p>Connecting front-end applications with robust back-end services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Programming Languages</h2>
+    <div class="skills-container" id="skills-list"></div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container" id="project-list"></div>
+  </section>
+
+  <!-- Collaboration Log Section -->
+  <!-- <section id="collaboration" class="section">
+    <h2>Collaboration Log</h2>
+    <div class="collaboration-content">
+      <p><strong>Peer Feedback Session 1 (Apr 1, 2025):</strong> Discussed hero section design with [Peer Name]. Suggested adding a code snippet for a more programmer-like vibe.</p>
+      <p><strong>Peer Feedback Session 2 (Apr 2, 2025):</strong> [Peer Name] recommended focusing on a professional layout. Simplified the design by removing interactive games.</p>
+      <p><strong>Peer Review (Apr 3, 2025):</strong> Shared my portfolio with the group. Received feedback on color contrast and improved accessibility.</p>
+    </div>
+  </section> -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="message-log"></div>
+  </section>
+
+  <!-- Messages Log Section -->
+  <section id="messages" class="section">
+    <h2>Messages Log</h2>
+    <div class="messages-container" id="messages-list"></div>
+  </section>
+
+  <!-- Footer with Social Media -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://twitter.com/codec_alvn" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/alvn2" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/alvine-mugo" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://instagram.com/madgoon254" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/yourhandle" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <p>© 2025 Alvine Mugo. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
