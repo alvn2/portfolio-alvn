@@ -39,9 +39,9 @@ function type() {
   if (charIndex < phrases[phraseIndex].length) {
     typing.textContent += phrases[phraseIndex][charIndex];
     charIndex++;
-    setTimeout(type, 100);
+    setTimeout(type, 80); // Smoother typing speed
   } else {
-    setTimeout(erase, 2000);
+    setTimeout(erase, 1500);
   }
 }
 
@@ -49,10 +49,14 @@ function erase() {
   if (charIndex > 0) {
     typing.textContent = phrases[phraseIndex].substring(0, charIndex - 1);
     charIndex--;
-    setTimeout(erase, 50);
+    setTimeout(erase, 40);
   } else {
     phraseIndex = (phraseIndex + 1) % phrases.length;
-    setTimeout(type, 500);
+    typing.style.opacity = 0; // Fade out before new phrase
+    setTimeout(() => {
+      typing.style.opacity = 1; // Fade in new phrase
+      type();
+    }, 300);
   }
 }
 type();
@@ -196,7 +200,6 @@ const observer = new IntersectionObserver((entries) => {
 // Fallback: Ensure sections are visible if observer fails
 sections.forEach(section => {
   observer.observe(section);
-  // Fallback: Make section visible after a delay if not already visible
   setTimeout(() => {
     if (!section.classList.contains('visible')) {
       section.classList.add('visible');
